@@ -1,0 +1,219 @@
+/* universal reset */
+*,
+*:before,
+*:after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* global styles */
+html {
+    font-size:62.5%;
+}
+header {
+    max-width: 40rem;
+    height: auto;
+    margin: 5rem;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    display:inline-table;
+}
+header img {
+    max-width: 40rem;
+    height: auto;
+    margin: 5rem;
+    align-self:flex-start;
+}
+nav {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400; 
+    text-align: center; 
+}
+
+body{
+
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+
+}
+h1{
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 400;
+}
+h2{
+    font-size: 3.8rem;
+}
+p{
+    font-size: 2.4rem;
+}
+img{
+    height: 6rem;
+}
+
+footer {
+    background-color: #cea36385;
+    color: black;
+    padding: 10px;
+    text-align: center;
+  }
+/* end global styles */
+
+/* specific styles */
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+    gap:2.5rem;
+    max-width:150rem;
+    margin:0 auto;
+}
+
+.flexContainerReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+    gap:2.5rem;
+    max-width:150rem;
+    margin:0 auto;
+}
+
+.homeStyle {
+    background-color: #8f7e6679;
+    border-radius: 176px;
+    margin: 8rem;
+    padding: 2rem;
+}
+.homeStyle:nth-child(even) {
+    background-color: #cea36385;
+}
+
+.homeStyle img {
+border-radius: 48%;
+margin: 0%;
+}
+
+.homeStyle div {
+
+}
+
+.footerStyle img {
+    height: 6rem;  
+}
+
+/* Booking Page*/
+
+.treatments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    border: solid 3px #cea36385;
+    max-width: 96rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.treatmentItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Shop Page */
+
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .shop img {
+    max-width: 20rem;
+    border-radius: 30%;
+    border: solid 3px #cea36385;
+ }
+/* hover effect*/
+
+.homeStyle img {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.homeStyle:hover img {
+    opacity: .2;
+}
+
+/* Style buttons */
+
+.button {
+    background-color: #56504a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 32px;
+  }
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Search Bar */
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: #c4ad918b;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #c4ad918b;
+    color: rgb(82, 73, 65);
+    font-size: 17px;
+    border: none;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #c4ad918b;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
